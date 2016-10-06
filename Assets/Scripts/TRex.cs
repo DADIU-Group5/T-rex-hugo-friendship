@@ -22,6 +22,18 @@ public class TRex : MonoBehaviour
         }
     }
 
+    public void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Collision!");
+        GameObject other = collision.transform.gameObject;
+        Icecream icecream = other.GetComponent<Icecream>();
+        if (icecream)
+        {
+            //TODO Add score.
+            icecream.Die();
+        }
+    }
+
     public void FixedUpdate()
     {
         Rigidbody body = GetComponent<Rigidbody>();
@@ -40,12 +52,12 @@ public class TRex : MonoBehaviour
 
     public void ToggleDirection()
     {
-        dir = (Direction) (((int)dir + 1) % 2);
+        dir = (Direction)(((int)dir + 1) % 2);
     }
 
-    // Called whenever the trex dies, should end the game.
+    // Called whenever the trex dies.
     public void Die()
     {
-
+        //TODO Call endgame.
     }
 }
