@@ -33,9 +33,24 @@ public class TRex : MonoBehaviour
         }
     }
 
+    public Vector3 GetDirectionVector()
+    {
+        if (dir == Direction.LEFT)
+        {
+            return Vector3.left;
+        }
+        else
+        {
+            return Vector3.right;
+        }
+    }
+
     public void FixedUpdate()
     {
         Rigidbody body = GetComponent<Rigidbody>();
+        body.AddForce(GetDirectionVector() * speed);
+
+        /*
         Vector3 vel = body.velocity;
         float velX;
         if (dir == Direction.LEFT)
@@ -47,6 +62,7 @@ public class TRex : MonoBehaviour
             velX = speed;
         }
         body.velocity = new Vector3(velX, vel.y, 0f);
+        */
     }
 
     public void ToggleDirection()
