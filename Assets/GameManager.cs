@@ -16,6 +16,9 @@ public class GameManager: MonoBehaviour {
     public GameObject endScreen;
     public Text gameOver;
     public Text scoreText;
+    public Text inGameScore;
+
+    public int score = 0;
 
     void Awake()
     {
@@ -62,13 +65,19 @@ public class GameManager: MonoBehaviour {
     {
         StopGame();
         gameOver.text = "You Died";
-        scoreText.text = "Score: 0!";
+        scoreText.text = "Score: " + IcecreamManager._instance.GetScore();
     }
 
     void StopGame()
     {
         endScreen.SetActive(true);
         GameRunning = false;
+    }
+
+    public void AddScore(int _score)
+    {
+        score += _score;
+        inGameScore.text = "Score: " + score;
     }
 
     public void Restart()

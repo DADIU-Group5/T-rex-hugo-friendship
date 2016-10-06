@@ -24,6 +24,17 @@ public class Hugo : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        if (Random.Range(0, 2) == 0){
+            movingRight = false;
+        }
+        if (movingRight)
+        {
+            rb.velocity = Vector3.right * -speed;
+        }
+        else
+        {
+            rb.velocity = Vector3.right * speed;
+        }
         nextMoveTime = averageMoveTime + Random.Range(-1, 1) * moveTimeDiff;
         moveTimer = 0;
         nextDropTime = averageDropTime + Random.Range(-1, 1) * dropTimeDiff;
@@ -37,7 +48,7 @@ public class Hugo : MonoBehaviour {
             rb.velocity = Vector3.zero;
             this.enabled = false;
         }
-        if(transform.position.x > maxX || transform.position.x < minX)
+        if (transform.position.x > maxX || transform.position.x < minX)
         {
             ChangeDirection();
         }
@@ -73,7 +84,10 @@ public class Hugo : MonoBehaviour {
     {
         //DROP mechanics
         Instantiate(ICECREAMs[Random.Range(0,ICECREAMs.Length)], transform.position+Vector3.down, Quaternion.identity);
-        nextDropTime = averageDropTime + Random.Range(-1, 1) * dropTimeDiff;
+        Debug.Log(averageDropTime);
+        averageDropTime *= 0.9f;
+        Debug.Log(averageDropTime);
+        nextDropTime = averageDropTime;
         dropTimer = 0;
     }
 

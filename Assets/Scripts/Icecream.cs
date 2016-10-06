@@ -17,11 +17,18 @@ public class Icecream : MonoBehaviour
     {
         if (transform.position.y <= deathHeight)
         {
-            Die();
+            Under();
         }
     }
 
     public void Die()
+    {
+        GameManager.instance.AddScore(pointValue);
+        IcecreamManager._instance.RemoveIcecream(this);
+        Destroy(gameObject);
+    }
+
+    void Under()
     {
         IcecreamManager._instance.RemoveIcecream(this);
         Destroy(gameObject);
