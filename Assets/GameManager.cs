@@ -41,6 +41,7 @@ public class GameManager: MonoBehaviour {
 
     void Update()
     {
+        return;
         if (!GameRunning)
         {
             return;
@@ -58,20 +59,21 @@ public class GameManager: MonoBehaviour {
     {
         StopGame();
         gameOver.text = "Game Ended!";
-        scoreText.text = "Score: "+IcecreamManager._instance.GetScore();
+        scoreText.text = "Score: " + score;
     }
 
     public void TRexDied()
     {
         StopGame();
         gameOver.text = "You Died";
-        scoreText.text = "Score: " + IcecreamManager._instance.GetScore();
+        scoreText.text = "Score: " + score;
     }
 
     void StopGame()
     {
         endScreen.SetActive(true);
         GameRunning = false;
+        PlayerPrefs.SetInt("HIGHSCORE", score);
     }
 
     public void AddScore(int _score)

@@ -16,11 +16,14 @@ public class Hugo : MonoBehaviour {
     public float averageDropTime = 3;
     public float dropTimeDiff = 2;
 
+    public Animator anim;
+
     float nextDropTime = 3;
     float nextMoveTime = 1;
     float dropTimer = 0;
     float moveTimer = 0;
     bool movingRight = true;
+    
 
 	// Use this for initialization
 	void Start () {
@@ -56,7 +59,7 @@ public class Hugo : MonoBehaviour {
         moveTimer += Time.deltaTime;
         if(dropTimer > nextDropTime)
         {
-            Drop();
+            DropAnim();
         }
         if (moveTimer > nextMoveTime)
         {
@@ -80,13 +83,22 @@ public class Hugo : MonoBehaviour {
         moveTimer = 0;
     }
 
+    void DropAnim()
+    {
+        anim.SetTrigger("Drop");
+    }
+
     void Drop()
     {
+        Debug.Log("Drop");
         //DROP mechanics
         Instantiate(ICECREAMs[Random.Range(0,ICECREAMs.Length)], transform.position+Vector3.down, Quaternion.identity);
-        Debug.Log(averageDropTime);
-        averageDropTime *= 0.9f;
-        Debug.Log(averageDropTime);
+        if (averageDropTime > 0.3f)
+        {
+            Debug.Log(averageDropTime);
+            averageDropTime *= 0.9f;
+            Debug.Log(averageDropTime);
+        }
         nextDropTime = averageDropTime;
         dropTimer = 0;
     }
