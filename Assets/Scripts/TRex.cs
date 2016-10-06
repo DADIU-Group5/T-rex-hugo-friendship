@@ -58,6 +58,7 @@ public class TRex : MonoBehaviour
     // Called whenever the trex dies.
     public void Die()
     {
-        //TODO Call endgame.
+        //TODO Gameover
+        Destroy(gameObject);
     }
 }
