@@ -22,6 +22,10 @@ public class GameManager: MonoBehaviour {
 
     void Awake()
     {
+        if (!GameRunning)
+        {
+            GameRunning = true;
+        }
         if(instance == null)
         {
             instance = this;
@@ -34,6 +38,7 @@ public class GameManager: MonoBehaviour {
 
     void Start()
     {
+        SceneManager.UnloadScene(0);
         timeSlider.maxValue = playTime;
         timeSlider.value = playTime;
         timer = playTime;
@@ -73,7 +78,10 @@ public class GameManager: MonoBehaviour {
     {
         endScreen.SetActive(true);
         GameRunning = false;
-        PlayerPrefs.SetInt("HIGHSCORE", score);
+        if (PlayerPrefs.GetInt("HIGHSCORE") > score)
+        {
+            PlayerPrefs.SetInt("HIGHSCORE", score);
+        }
     }
 
     public void AddScore(int _score)

@@ -9,6 +9,7 @@ public class Menu : MonoBehaviour {
 
     void Start()
     {
+        SceneManager.UnloadScene(1);
         HS.text = "HIGHSCORE: "+PlayerPrefs.GetInt("HIGHSCORE");
     }
 
