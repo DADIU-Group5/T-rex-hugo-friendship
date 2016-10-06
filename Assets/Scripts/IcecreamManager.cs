@@ -30,4 +30,14 @@ public class IcecreamManager : MonoBehaviour
     {
         icecreams.Remove(icecream);
     }
+
+    public int GetScore()
+    {
+        int score = 0;
+        foreach (Icecream icecream in icecreams)
+        {
+            score += icecream.pointValue;
+        }
+        return score;
+    }
 }
