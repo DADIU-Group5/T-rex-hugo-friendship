@@ -9,7 +9,7 @@ public class TRex : MonoBehaviour
 
     public GameObject model;
     public KeyCode actionButton = KeyCode.Space;
-    public float speed = 4, deathHeight = -10;
+    public float force = 25, maxSpeed = 10, deathHeight = -10;
 
     public void Update()
     {
@@ -48,7 +48,12 @@ public class TRex : MonoBehaviour
     public void FixedUpdate()
     {
         Rigidbody body = GetComponent<Rigidbody>();
-        body.AddForce(GetDirectionVector() * speed);
+        body.AddForce(GetDirectionVector() * force);
+
+        if (body.velocity.magnitude > maxSpeed)
+        {
+            body.velocity = body.velocity.normalized * maxSpeed;
+        }
 
         /*
         Vector3 vel = body.velocity;
