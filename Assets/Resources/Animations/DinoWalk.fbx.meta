@@ -153,7 +153,159 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      firstFrame: 1
+      lastFrame: 7
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: grp_cnt
+        weight: 1
+      - path: grp_cnt/master
+        weight: 1
+      - path: grp_cnt/master/anim_l_foot
+        weight: 1
+      - path: grp_cnt/master/anim_l_foot/anim_l_heel
+        weight: 1
+      - path: grp_cnt/master/anim_l_foot/anim_l_heel/anim_l_toe
+        weight: 1
+      - path: grp_cnt/master/anim_l_foot/anim_l_heel/anim_l_toe/anim_l_ball
+        weight: 1
+      - path: grp_cnt/master/anim_l_foot/anim_l_heel/anim_l_toe/anim_l_ball/group2
+        weight: 1
+      - path: grp_cnt/master/anim_l_foot/anim_l_heel/anim_l_toe/anim_l_ball/group2/ikHandle4
+        weight: 1
+      - path: grp_cnt/master/anim_l_foot/anim_l_heel/anim_l_toe/group4
+        weight: 1
+      - path: grp_cnt/master/anim_l_foot/anim_l_heel/anim_l_toe/group4/ikHandle5
+        weight: 1
+      - path: grp_cnt/master/anim_l_foot/anim_l_heel/anim_l_toe/group4/ikHandle6
+        weight: 1
+      - path: grp_cnt/master/anim_pelvis
+        weight: 1
+      - path: grp_cnt/master/anim_pelvis/anim_chest
+        weight: 1
+      - path: grp_cnt/master/anim_pelvis/anim_chest/anim_head
+        weight: 1
+      - path: grp_cnt/master/anim_pelvis/anim_chest/anim_head/anim_downhead
+        weight: 1
+      - path: grp_cnt/master/anim_pelvis/anim_chest/anim_head/anim_uphead
+        weight: 1
+      - path: grp_cnt/master/anim_pelvis/anim_chest/arm_l
+        weight: 1
+      - path: grp_cnt/master/anim_pelvis/anim_chest/arm_r
+        weight: 1
+      - path: grp_cnt/master/anim_pelvis/tail_anim_1
+        weight: 1
+      - path: grp_cnt/master/anim_pelvis/tail_anim_1/tail_anim_2
+        weight: 1
+      - path: grp_cnt/master/anim_pelvis/tail_anim_1/tail_anim_2/tail_anim_3
+        weight: 1
+      - path: grp_cnt/master/anim_r_foot
+        weight: 1
+      - path: grp_cnt/master/anim_r_foot/anim_r_heel
+        weight: 1
+      - path: grp_cnt/master/anim_r_foot/anim_r_heel/anim_r_toe
+        weight: 1
+      - path: grp_cnt/master/anim_r_foot/anim_r_heel/anim_r_toe/anim_r_ball
+        weight: 1
+      - path: grp_cnt/master/anim_r_foot/anim_r_heel/anim_r_toe/anim_r_ball/group3
+        weight: 1
+      - path: grp_cnt/master/anim_r_foot/anim_r_heel/anim_r_toe/anim_r_ball/group3/ikHandle1
+        weight: 1
+      - path: grp_cnt/master/anim_r_foot/anim_r_heel/anim_r_toe/group1
+        weight: 1
+      - path: grp_cnt/master/anim_r_foot/anim_r_heel/anim_r_toe/group1/ikHandle2
+        weight: 1
+      - path: grp_cnt/master/anim_r_foot/anim_r_heel/anim_r_toe/group1/ikHandle3
+        weight: 1
+      - path: grp_cnt/master/curve1
+        weight: 1
+      - path: grp_cnt/master/curve2
+        weight: 1
+      - path: grp_geo
+        weight: 1
+      - path: grp_geo/dino1
+        weight: 1
+      - path: grp_rig
+        weight: 1
+      - path: grp_rig/pelvis_1
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/chest_1
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/chest_1/alm_l_1
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/chest_1/alm_l_1/alm_l_2
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/chest_1/arm_r_1
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/chest_1/arm_r_1/arm_r_2
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/chest_1/head_1
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/chest_1/head_1/lowerhead_1
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/chest_1/head_1/lowerhead_1/lowerhead_2
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/chest_1/head_1/upperhead_1
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/chest_1/head_1/upperhead_1/upperhead_2
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/leg_l_1
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/leg_l_1/leg_l_2
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/leg_l_1/leg_l_2/leg_l_3
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/leg_l_1/leg_l_2/leg_l_3/leg_l_4
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/leg_l_1/leg_l_2/leg_l_3/leg_l_4/leg_l_5
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/leg_r_1
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/leg_r_1/leg_r_2
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/leg_r_1/leg_r_2/leg_r_3
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/leg_r_1/leg_r_2/leg_r_3/leg_r_4
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/leg_r_1/leg_r_2/leg_r_3/leg_r_4/leg_r_5
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/tail_1
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/tail_1/tail_2
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/tail_1/tail_2/tail_3
+        weight: 1
+      - path: grp_rig/pelvis_1/pelvis_1 1/tail_1/tail_2/tail_3/tail_4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
