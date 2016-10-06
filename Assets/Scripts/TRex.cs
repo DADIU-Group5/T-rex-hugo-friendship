@@ -76,6 +76,7 @@ public class TRex : MonoBehaviour
     public void Die()
     {
         //TODO Gameover
+        GameManager.instance.TRexDied();
         Destroy(gameObject);
     }
 }
