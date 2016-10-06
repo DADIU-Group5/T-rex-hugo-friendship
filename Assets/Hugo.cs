@@ -42,6 +42,7 @@ public class Hugo : MonoBehaviour {
         moveTimer = 0;
         nextDropTime = averageDropTime + Random.Range(-1, 1) * dropTimeDiff;
         dropTimer = 0;
+        DropAnim();
     }
 	
 	// Update is called once per frame
@@ -90,14 +91,15 @@ public class Hugo : MonoBehaviour {
 
     void Drop()
     {
-        Debug.Log("Drop");
         //DROP mechanics
         Instantiate(ICECREAMs[Random.Range(0,ICECREAMs.Length)], transform.position+Vector3.down, Quaternion.identity);
-        if (averageDropTime > 0.3f)
+        if (averageDropTime > 0.2f)
         {
-            Debug.Log(averageDropTime);
             averageDropTime *= 0.9f;
-            Debug.Log(averageDropTime);
+            if(averageDropTime> 0.2f)
+            {
+                averageDropTime = 0.2f;
+            }
         }
         nextDropTime = averageDropTime;
         dropTimer = 0;

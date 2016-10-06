@@ -14,7 +14,6 @@ public class Icecream : MonoBehaviour
     {
        
         IcecreamManager._instance.AddIcecream(this);
-        spawnSound.Play(); 
     }
 
     public void Update()
@@ -27,7 +26,6 @@ public class Icecream : MonoBehaviour
 
     public void Die()
     {
-        eatSound.Play(); 
         GameManager.instance.AddScore(pointValue);
         IcecreamManager._instance.RemoveIcecream(this);
         Destroy(gameObject);
