@@ -8,13 +8,17 @@ public class TRex : MonoBehaviour
     private Direction dir = Direction.LEFT;
 
     public KeyCode actionButton = KeyCode.Space;
-    public float speed = 4;
+    public float speed = 4, deathHeight = -10;
 
     public void Update()
     {
         if (Input.GetKeyDown(actionButton))
         {
             ToggleDirection();
+        }
+        if (transform.position.y <= deathHeight)
+        {
+            Die();
         }
     }
 
@@ -37,5 +41,11 @@ public class TRex : MonoBehaviour
     public void ToggleDirection()
     {
         dir = (Direction) (((int)dir + 1) % 2);
+    }
+
+    // Called whenever the trex dies, should end the game.
+    public void Die()
+    {
+
     }
 }
