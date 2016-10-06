@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: f812fa9560952a84d891c8e31f15c473
+timeCreated: 1475754520
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: alm_l_1
+    100002: alm_l_2
+    100004: anim_chest
+    100006: anim_downhead
+    100008: anim_head
+    100010: anim_l_ball
+    100012: anim_l_foot
+    100014: anim_l_heel
+    100016: anim_l_toe
+    100018: anim_pelvis
+    100020: anim_r_ball
+    100022: anim_r_foot
+    100024: anim_r_heel
+    100026: anim_r_toe
+    100028: anim_uphead
+    100030: arm_l
+    100032: arm_r
+    100034: arm_r_1
+    100036: arm_r_2
+    100038: chest_1
+    100040: curve1
+    100042: curve2
+    100044: //RootNode
+    100046: dino1
+    100048: group1
+    100050: group2
+    100052: group3
+    100054: group4
+    100056: grp_cnt
+    100058: grp_geo
+    100060: grp_rig
+    100062: head_1
+    100064: ikHandle1
+    100066: ikHandle2
+    100068: ikHandle3
+    100070: ikHandle4
+    100072: ikHandle5
+    100074: ikHandle6
+    100076: leg_l_1
+    100078: leg_l_2
+    100080: leg_l_3
+    100082: leg_l_4
+    100084: leg_l_5
+    100086: leg_r_1
+    100088: leg_r_2
+    100090: leg_r_3
+    100092: leg_r_4
+    100094: leg_r_5
+    100096: lowerhead_1
+    100098: lowerhead_2
+    100100: master
+    100102: pelvis_1
+    100104: pelvis_1 1
+    100106: tail_1
+    100108: tail_2
+    100110: tail_3
+    100112: tail_4
+    100114: tail_anim_1
+    100116: tail_anim_2
+    100118: tail_anim_3
+    100120: upperhead_1
+    100122: upperhead_2
+    400000: alm_l_1
+    400002: alm_l_2
+    400004: anim_chest
+    400006: anim_downhead
+    400008: anim_head
+    400010: anim_l_ball
+    400012: anim_l_foot
+    400014: anim_l_heel
+    400016: anim_l_toe
+    400018: anim_pelvis
+    400020: anim_r_ball
+    400022: anim_r_foot
+    400024: anim_r_heel
+    400026: anim_r_toe
+    400028: anim_uphead
+    400030: arm_l
+    400032: arm_r
+    400034: arm_r_1
+    400036: arm_r_2
+    400038: chest_1
+    400040: curve1
+    400042: curve2
+    400044: //RootNode
+    400046: dino1
+    400048: group1
+    400050: group2
+    400052: group3
+    400054: group4
+    400056: grp_cnt
+    400058: grp_geo
+    400060: grp_rig
+    400062: head_1
+    400064: ikHandle1
+    400066: ikHandle2
+    400068: ikHandle3
+    400070: ikHandle4
+    400072: ikHandle5
+    400074: ikHandle6
+    400076: leg_l_1
+    400078: leg_l_2
+    400080: leg_l_3
+    400082: leg_l_4
+    400084: leg_l_5
+    400086: leg_r_1
+    400088: leg_r_2
+    400090: leg_r_3
+    400092: leg_r_4
+    400094: leg_r_5
+    400096: lowerhead_1
+    400098: lowerhead_2
+    400100: master
+    400102: pelvis_1
+    400104: pelvis_1 1
+    400106: tail_1
+    400108: tail_2
+    400110: tail_3
+    400112: tail_4
+    400114: tail_anim_1
+    400116: tail_anim_2
+    400118: tail_anim_3
+    400120: upperhead_1
+    400122: upperhead_2
+    4300000: dino1
+    9500000: //RootNode
+    13700000: dino1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

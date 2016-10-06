@@ -7,6 +7,7 @@ public class TRex : MonoBehaviour
 
     private Direction dir = Direction.LEFT;
 
+    public GameObject model;
     public KeyCode actionButton = KeyCode.Space;
     public float speed = 4, deathHeight = -10;
 
@@ -24,12 +25,10 @@ public class TRex : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collision!");
         GameObject other = collision.transform.gameObject;
         Icecream icecream = other.GetComponent<Icecream>();
         if (icecream)
         {
-            //TODO Add score.
             icecream.Die();
         }
     }
@@ -53,6 +52,8 @@ public class TRex : MonoBehaviour
     public void ToggleDirection()
     {
         dir = (Direction)(((int)dir + 1) % 2);
+        Vector3 scale = model.transform.localScale;
+        model.transform.localScale = new Vector3(-scale.x, scale.y, scale.z);
     }
 
     // Called whenever the trex dies.

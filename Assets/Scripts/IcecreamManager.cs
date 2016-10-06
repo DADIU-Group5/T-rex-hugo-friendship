@@ -10,7 +10,7 @@ public class IcecreamManager : MonoBehaviour
 
     public void Awake()
     {
-        if (_instance = null)
+        if (_instance == null)
         {
             _instance = this;
         }
