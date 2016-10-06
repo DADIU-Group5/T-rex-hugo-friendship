@@ -13,7 +13,7 @@ public class TRex : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(actionButton))
+        if (Input.GetKeyDown(actionButton) || Input.touchCount > 0)
         {
             ToggleDirection();
         }
