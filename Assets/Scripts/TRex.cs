@@ -11,16 +11,31 @@ public class TRex : MonoBehaviour
     public KeyCode actionButton = KeyCode.Space;
     public float force = 25, maxSpeed = 10, deathHeight = -10;
 
+    public AudioSource run;
+    public AudioSource death;
+    public AudioSource eat;
+
     public void Update()
     {
         if (Input.GetKeyDown(actionButton) || Input.touchCount > 0)
         {
+            run.Play();
             ToggleDirection();
         }
         if (transform.position.y <= deathHeight)
         {
+            death.Play(); 
             Die();
         }
+    }
+    void OnTriggerEnter(Collider coll)
+    {
+        if (coll.tag == "iceCream")
+        {
+            eat.Play();
+        }
+               
+            
     }
 
     public void OnCollisionEnter(Collision collision)

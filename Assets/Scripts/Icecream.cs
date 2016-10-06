@@ -5,10 +5,16 @@ public class Icecream : MonoBehaviour
 {
     public int pointValue = 1;
     public float deathHeight = -10;
+    public AudioSource spawnSound;
+    public AudioSource eatSound;
+    public AudioSource hitGroundSound;
 
+   
     public void Start()
     {
+       
         IcecreamManager._instance.AddIcecream(this);
+        spawnSound.Play(); 
     }
 
     public void Update()
@@ -21,6 +27,7 @@ public class Icecream : MonoBehaviour
 
     public void Die()
     {
+        eatSound.Play(); 
         GameManager.instance.AddScore(pointValue);
         IcecreamManager._instance.RemoveIcecream(this);
         Destroy(gameObject);
@@ -30,5 +37,6 @@ public class Icecream : MonoBehaviour
     {
         IcecreamManager._instance.RemoveIcecream(this);
         Destroy(gameObject);
+        
     }
 }
